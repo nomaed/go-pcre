@@ -21,7 +21,8 @@ echo "Using temp directory $TEMP to build $SRC"
 )
 PLATFORM="$(uname -sm)"
 case "${PLATFORM}" in
-  Linux*)  OUTPUT=libpcre_linux.a;;
+  "Linux x86_64"*)  OUTPUT=libpcre_linux_x86_64.a;;
+  "Linux aarch64"*)  OUTPUT=libpcre_linux_arm64.a;;
   "Darwin x86_64"*) OUTPUT=libpcre_darwin_x86_64.a;;
   "Darwin arm64"*) OUTPUT=libpcre_darwin_arm64.a;;
   *)       OUTPUT=libpcre.a

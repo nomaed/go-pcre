@@ -556,7 +556,7 @@ func (m *Matcher) name2index(name string) (int, error) {
 	defer C.free(unsafe.Pointer(name1))
 	group := int(C.pcre_get_stringnumber(m.re.ptr, name1))
 	if group < 0 {
-		return group, fmt.Errorf("Matcher.Named: unknown name: " + name)
+		return group, fmt.Errorf("Matcher.Named: unknown name: %s", name)
 	}
 	return group, nil
 }
