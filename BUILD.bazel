@@ -13,7 +13,7 @@ go_library(
     clinkopts = [],  # keep
     cdeps = [":libpc"],
     cgo = True,
-    importpath = "github.com/rubrikinc/go-pcre",
+    importpath = "github.com/nomaed/go-pcre",
     visibility = ["//visibility:public"],
 )
 
