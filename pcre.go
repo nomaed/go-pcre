@@ -1,3 +1,5 @@
+//go:build !windows
+
 // Copyright (c) 2011 Florian Weimer. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
